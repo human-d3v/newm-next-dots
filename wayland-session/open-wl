@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# https://github.com/newm-next/newm-next/blob/master/doc/tips_and_tricks.md
+# this helps enhance the native experience
+
+flags='--ozone-platform-hint=auto \
+--enable-features=WebRTCPipeWireCapturer \
+--enable-gpu \
+--ignore-gpu-blocklist \
+--enable-gpu-rasterization \
+--enable-zero-copy \
+--disable-gpu-driver-bug-workarounds \
+--enable-features=VaapiVideoDecoder \
+--disable-software-rasterizer \
+--start-maximized \
+--js-flags="--max-old-space-size=5120"'
+
+$1 $flags $2
