@@ -127,7 +127,7 @@ def rules(view):
         "float_size": (750, 750),
         "float_pos": (0.5, 0.35)
     }
-    float_apps = ("rofi-Networks", "Rofi", "nm-connection-editor")
+    float_apps = ("newm-next-launcher")
 
     if view.app_id in float_apps:
         return common_rules
