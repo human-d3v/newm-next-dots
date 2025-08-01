@@ -1,0 +1,124 @@
+@define-color background rgba(0,0,0,0.04);
+@define-color foreground #cccbcc;
+@define-color widget-background #273d36;
+@define-color widget-other #182622;
+
+window#waybar {
+	background-color: @background;
+	color: @foreground;
+	min-height: 0;
+	border-bottom: 0px solid @foreground;
+}
+
+#window {
+	background-color: @widget-background;
+	margin: 2px 8px 2px 16px;
+	padding: 0px 4px 0px 4px;
+	font-size: 16px;
+	border-radius: 10px;
+	opacity: 0.6;
+}
+
+#custom-menu {
+	background-color: @widget-other;
+	font-size: 18px;
+	margin: 2px 8px 2px 0px;
+	padding: 0px 15px 0px 8px;
+	border-radius: 0px 10px 10px 0px;
+	opacity: 0.6;
+}
+
+#idle_inhibitor {
+	padding: 0px 14px 0px 4px;
+}
+
+#custom-launch-dock {
+	background-color: @widget-other;
+	border-radius: 10px 0px 0px 10px;
+	padding: 0px 4px 0px 4px;
+	margin: 2px 0px 2px 0px;
+	font-size: 18px;
+	opacity: 0.6;
+}
+
+#custom-launch-dock-filemanager {
+	background-color: @widget-background;
+  font-size: 18px;
+	padding: 0px 12px 0px 4px;
+	font-size: 18px;
+	margin: 2px 2px 2px 0px;
+	border-radius: 0px 10px 10px 0px;
+	opacity: 0.6;
+}
+
+#custom-launch-dock-browser,
+#custom-launch-dock-terminal,
+#custom-launch-dock-steam,
+#custom-launch-dock-gimp,
+#custom-launch-dock-ebook {
+	background-color: @widget-background;
+  padding: 0px 10px 0px 4px;
+  font-size: 18px;
+	margin: 2px 0px 2px 0px;
+	font-weight: bold;
+	opacity: 0.6;
+}
+
+#clock,
+#network,
+#custom-alsa,
+#bluetooth,
+#battery.2,
+#custom-workspace-wrapper,
+#idle_inhibitor.2,
+#custom-window-title.2 {
+	font-size: 16px;
+	background: @widget-other;
+	opacity: 0.6;
+	margin: 2px 0px 2px 2px;
+	border-radius: 10px 0px 0px 10px;
+	padding: 0px 8px 0px 4px;
+}
+
+#clock.2,
+#network.2,
+#custom-alsa.2,
+#bluetooth.2,
+#battery,
+#idle_inhibitor,
+#custom-window-title {
+	font-size: 16px;
+  background-color: @widget-background;
+	margin: 2px 8px 2px 0px;
+	border-radius: 0px 10px 10px 0px;
+	padding: 0px 4px 0px 2px;
+	opacity: .6;
+}
+
+#custom-power {
+	border-radius: 10px 0px 0px 10px;
+	background-color: @widget-other;
+	padding: 0px 15px 0px 10px;
+	font-size:18px;
+	opacity: .6;
+}
+
+/* cool animations (that don't function) */
+
+@keyframes slideFromLeft {
+	from {
+		opacity: 0;
+		margin-left: -100px;
+	}
+	to { 
+		opacity: 1;
+		margin-left: 0;
+	}
+}
+
+.custom-launch-dock:hover + .custom-launch-dock-browser,
+.custom-launch-dock:hover + .custom-launch-dock-terminal,
+.custom-launch-dock:hover + .custom-launch-dock-steam,
+.custom-launch-dock:hover + .custom-launch-dock-filemanager {
+	animation: slideFromLeft 0.5s forwards;
+}

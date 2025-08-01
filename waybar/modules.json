@@ -1,0 +1,193 @@
+{
+	"custom/menu": {
+		"format": "󰔈",
+    "tooltip": false,
+    "on-click": "$HOME/.config/newm-next-dots/scripts/rofi_launcher",
+    "on-click-right": "$HOME/.config/newm-next-dots/scripts/rofi_runner",
+  },
+
+  "idle_inhibitor": {
+		"format": "{icon}",
+    "format-icons": {
+			"activated": "",
+			"deactivated": ""
+    },
+    "timeout": 30
+  },
+
+	"idle_inhibitor#2": {
+		"format":" "
+	},
+
+	"custom/window-title#2": {
+		"exec": "newm-cmd current-window-title",
+		"interval": 1,
+		"format": {},
+		"return-type": "text"
+	},
+
+	"custom/window-title": {
+		"format": " "
+	},
+
+	"custom/launch-dock": {
+		"format": "󰅂",
+	},
+
+	"custom/launch-dock-browser": {
+		"format":"󰘯",
+		"on-click": "vivaldi",
+		"tooltip": "vivaldi",
+	},
+
+	"custom/launch-dock-terminal": {
+		"format":"󰆍",
+		"on-click": "ghostty",
+		"tooltip": "terminal",
+	}, 
+
+	"custom/launch-dock-steam":{
+		"format":"󰓓",
+		"on-click":"steam",
+		"tooltip": "Steam",
+	},
+
+	"custom/launch-dock-gimp": {
+    "format":"󰄄",
+		"on-click": "gimp",
+		"tooltip": "",
+	},
+
+	"custom/launch-dock-ebook":{
+		"format":"",
+		"on-click":"calibre",
+		"tooltip":"calibre",
+	},
+
+	"custom/launch-dock-filemanager": {
+    "format":"",
+    "on-click": "thunar",
+    "tooltip": "thunar",
+  },
+
+  "battery#2": {
+		"interval": 60,
+		"full-at": 100,
+		"design-capacity": false,
+    "states": {
+			"good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}",
+    "format-charging": "",
+    "format-plugged": "",
+    "format-full": "{icon}",
+    "format-icons": ["", "", "", "", ""],
+    "format-time": "{H}h {M}min",
+    "tooltip": true,
+  },
+
+
+  "battery": {
+		"interval": 60,
+		"full-at": 100,
+		"design-capacity": false,
+    "states": {
+			"good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}%",
+    "format-charging": "{capacity}%",
+    "format-plugged": "{capacity}%",
+    "format-full": "Full",
+    "format-alt": "{time}",
+    "format-time": "{H}h {M}min",
+    "tooltip": true,
+  },
+
+  "bluetooth": {
+    "format": "󰂯",
+    "format-on": "󰂯",
+    "format-off": "󰂲",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱",
+    "format-connected-battery": "󰂱",
+    "tooltip": true,
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "on-click": "~/.config/newm-next-dots/scripts/rofi_bluetooth",
+    "on-click-right": "blueman-manager"
+  },
+
+  "bluetooth#2": {
+		"format": "{status}",
+    "format-on": "{status}",
+    "format-off": "{status}",
+    "format-disabled": "{status}",
+    "format-connected": "{device_alias}",
+    "format-connected-battery": "{device_alias}, {device_battery_percentage}%",
+    "tooltip": true,
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "on-click": "~/.config/newm-next-dots/scripts/rofi_bluetooth",
+    "on-click-right": "blueman-manager",
+  },
+
+  "custom/alsa": {
+		"exec":"amixer get Master | sed -nre 's/.*\\[off\\].*/󰝟/p; s/.*\\[(.*%)\\].*//p'",
+		"interval":"once",
+		"signal":44,
+    "on-click": "~/.config/newm-next-dots/scripts/alsaToggleMute.sh && pkill -SIGRTMIN+10 waybar",
+  },
+
+  "custom/alsa#2": {
+		"exec":"amixer get Master | sed -nre 's/.*\\[off\\].*/0%/p; s/.*\\[(.*%)\\].*/\\1/p'",
+		"signal":45,
+    "on-click": "~/.config/newm-next-dots/scripts/alsa.sh && pkill -SIGRTMIN+10 waybar",
+  },
+
+  "clock": {
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "",
+  },
+    
+	"clock#2": {
+		"interval": 60,
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%I:%M %p}",
+    "format-alt": "{:%a %b %d, %G}"
+  },
+
+  "network": {
+		"interval": 5,
+    "format-wifi": "󱚾",
+    "format-ethernet": "󰈀",
+    "format-linked": "󰈀",
+    "format-disconnected": "󰖪",
+    "format-disabled": "󰖪",
+    "tooltip-format": " {ifname} via {gwaddr}",
+    "on-click": "~/.config/newm-next-dots/scripts/rofi_network",
+  },
+
+  "network#2": {
+		"interval": 5,
+    "format-wifi": "{essid}",
+    "format-ethernet": "{ipaddr}/{cidr}",
+    "format-linked": "{ifname} (No IP)",
+    "format-disconnected": "Disconnected",
+    "format-disabled": "Disabled",
+    "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
+    "tooltip-format": " {ifname} via {gwaddr}",
+  },
+
+  "custom/power": {
+    "format": "󰐦",
+    "tooltip": false,
+    "on-click": "$HOME/.config/newm-next-dots/scripts/rofi_powermenu",
+  },
+
+}
