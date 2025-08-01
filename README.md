@@ -45,6 +45,7 @@ pip3 install --user git+https://github.com/newm-next/newm-next
 ## Distro specific isntallation of newm-next
 <details>
 <summary>On Fedora</summary>
+
 ```bash
 # install dependencies
 sudo dnf install cmake gcc glslang libavcodec-free-devel libavformat-free-devel libavutil-free-devel libdrm-devel libinput-devel libpng-devel libseat-devel libxkbcommon-devel mesa-libEGL-devel mesa-libgbm-devel meson ninja-build pixman-devel python3-devel python3-meson-python python3-pip python-wheel systemd-devel vulkan-loader-devel wayland-devel wayland-protocols-devel xcb-util-errors-devel xcb-util-renderutil-devel xcb-util-wm-devel xorg-x11-server-Xwayland-devel
@@ -57,6 +58,7 @@ pip install --user git+https://github.com/newm-next/newm-next
 
 <details>
 <summary>On Ubuntu</summary>
+
 ```bash
 # install dependencies
 sudo apt install git meson pkg-config cmake libwayland-dev wayland-protocols libxkbcommon-dev libinput-dev libpixman-1-dev libdrm-dev libgbm-dev libegl-dev libgles2-mesa-dev libvulkan-dev glslang-tools libseat-dev libxcb-dri3-dev libxcb-composite0-dev libxcb-icccm4-dev libxcb-res0-dev libpng-dev libxcb-present-dev libavutil-dev libxcb-render-util0-dev libxcb-shm0-dev libxcb-xinput-dev libxcb-errors-dev libavcodec-dev libavformat-dev python3-dev python3-pip
