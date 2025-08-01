@@ -115,7 +115,7 @@ background = {
 }
 # -- other settings
 blend_time = 1.0  # time in seconds to blend in and out at startup & shutdown
-anim_time = 0.10  # time in seconds for all animations (default is .3 == too slow)
+anim_time = 0.10  # time in seconds for all animations (default is .3 == slow)
 corner_radius = 8
 
 
@@ -180,7 +180,7 @@ focus = {
 term = '~/.config/newm-next-dots/scripts/ghostty.sh'
 backup_term = 'alacritty'
 waybar = '~/.config/newm-next-dots/scripts/waybar.sh'
-launcher = '~/.config/dotfiles/scripts/launcher.sh'
+launcher = '~/.config/newm-next-dots/scripts/launcher.sh'
 network = '~/.config/dotfiles/scripts/rofi/network.sh'
 powermenu = '~/.config/dotfiles/scripts/rofi/powermenu.sh'
 screenshot = '~/.config/newm-next-dots/scripts/screenshot.sh'
