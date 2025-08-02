@@ -2,6 +2,7 @@
 newm-next is the most unique scrolling/tiling Wayland Compositor out there. 
 Here is my personal config. 
 
+# Installation
 ## Generic installation of newm-next
 Because the compositor is built and installed using `pip`, diagnosing build
 issues is a little tricky. Most of the dependency issues occur when building 
@@ -73,3 +74,6 @@ echo 'PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
 echo 'PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 ```
 </details>
+
+# Setting up Wayland Environment
+
