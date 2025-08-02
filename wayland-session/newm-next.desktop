@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=newm-next
+Comment="newm-next Wayland Compositor"
+Exec=/usr/local/bin/newm-run.sh
+Type=Application
+DesktopNames=wlroots
