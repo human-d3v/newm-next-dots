@@ -76,4 +76,4 @@ echo 'PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 </details>
 
 # Setting up Wayland Environment
-
+Follow the [README](https://github.com/human-d3v/newm-next-dots/tree/main/wayland-session). It outlines the install guide for the locking behaviour, Wayland Session variables, and start scripts. 
