@@ -99,7 +99,7 @@ pywm = {
         'focus_follows_mouse': True,
         'constrain_popups_to_toplevel': True,
         'encourage_csd': False,  # disable client side decorations
-        'debug': False,
+        # 'debug': False,
         'shaders': 'basic',
         'renderer_mode': 'pywm',  # enable pywm (alternative is wlr)
 }
@@ -177,13 +177,13 @@ focus = {
 
 # ============= behavior, keys, gestures =================================
 # -- scripts
-term = '~/.config/newm-next-dots/scripts/ghostty.sh'
+term = '~/.config/newm/scripts/ghostty.sh'
 backup_term = 'alacritty'
-waybar = '~/.config/newm-next-dots/scripts/waybar.sh'
-launcher = '~/.config/newm-next-dots/scripts/launcher.sh'
+waybar = '~/.config/newm/scripts/waybar.sh'
+launcher = '~/.config/newm/scripts/launcher.sh'
 network = '~/.config/dotfiles/scripts/rofi/network.sh'
 powermenu = '~/.config/dotfiles/scripts/rofi/powermenu.sh'
-screenshot = '~/.config/newm-next-dots/scripts/screenshot.sh'
+screenshot = '~/.config/newm/scripts/screenshot.sh'
 brightness = '~/.config/dotfiles/scripts/brightness.sh'
 volume = '~/.config/dotfiles/scripts/volume.sh'
 
