@@ -1,7 +1,7 @@
 #!/bin/bash
 # https://github.com/newm-next/newm-next/blob/master/doc/env_wayland.md
 # this is a combo of the suggested wayland_enablement.sh and newm-run.sh
-
+export PATH="$HOME/.local/bin:$PATH"
 
 # --- Set session variables newm-run
 export XDG_SESSION_TYPE=wayland
