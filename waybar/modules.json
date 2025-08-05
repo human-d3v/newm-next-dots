@@ -1,9 +1,9 @@
 {
 	"custom/menu": {
-		"format": "󰔈",
+		"format": "󰣨",
     "tooltip": false,
-    "on-click": "$HOME/.config/newm-next-dots/scripts/rofi_launcher",
-    "on-click-right": "$HOME/.config/newm-next-dots/scripts/rofi_runner",
+    "on-click": "$HOME/.config/newm/scripts/rofi_launcher",
+    "on-click-right": "$HOME/.config/newm/scripts/rofi_runner",
   },
 
   "idle_inhibitor": {
@@ -141,13 +141,13 @@
 		"exec":"amixer get Master | sed -nre 's/.*\\[off\\].*/󰝟/p; s/.*\\[(.*%)\\].*//p'",
 		"interval":"once",
 		"signal":44,
-    "on-click": "~/.config/newm-next-dots/scripts/alsaToggleMute.sh && pkill -SIGRTMIN+10 waybar",
+    "on-click": "~/.config/newm/scripts/alsaToggleMute.sh && pkill -SIGRTMIN+10 waybar",
   },
 
   "custom/alsa#2": {
 		"exec":"amixer get Master | sed -nre 's/.*\\[off\\].*/0%/p; s/.*\\[(.*%)\\].*/\\1/p'",
 		"signal":45,
-    "on-click": "~/.config/newm-next-dots/scripts/alsa.sh && pkill -SIGRTMIN+10 waybar",
+    "on-click": "~/.config/newm/scripts/alsa.sh && pkill -SIGRTMIN+10 waybar",
   },
 
   "clock": {

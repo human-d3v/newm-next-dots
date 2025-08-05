@@ -1,9 +1,9 @@
 {
-	"include": ["~/.config/newm-next-dots/waybar/modules.json"],
-	"css": "~/.config/newm-next-dots/waybar/style.css",
+	"include": ["~/.config/newm/waybar/modules.json"],
+	"css": "~/.config/newm/waybar/style.css",
 	"layer":"top",
 	"height": 15,
-	"modules-left": ["custom/menu", "idle_inhibitor#2","idle_inhibitor"],
+	"modules-left": ["custom/menu", "idle_inhibitor#2","idle_inhibitor", "custom/window-title", "custom/window-title#2"],
 	"modules-center": ["custom/launch-dock","custom/launch-dock-browser","custom/launch-dock-terminal","custom/launch-dock-steam","custom/launch-dock-gimp","custom/launch-dock-ebook","custom/launch-dock-filemanager"],
 	"modules-right": ["battery#2","battery","bluetooth","bluetooth#2","custom/alsa","custom/alsa#2","clock","clock#2","network","network#2","custom/power"],
 }
