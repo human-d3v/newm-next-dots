@@ -7,4 +7,4 @@ for _prs in "${_ps[@]}"; do
 	fi
 done
 
-waybar -c ~/.config/newm-next-dots/waybar/config &
+waybar -c ~/.config/newm/waybar/config &
