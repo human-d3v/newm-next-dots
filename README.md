@@ -2,6 +2,13 @@
 newm-next is the most unique scrolling/tiling Wayland Compositor out there. 
 Here is my personal config. 
 
+# Dependencies
+    - NetworkManager (+tools on Gentoo)
+    - Bluez
+    - [wallust](https://codeberg.org/explosion-mental/wallust)
+    - [newm-next](https://github.com/newm-next/newm-next)
+    - [waybar](https://github.com/Alexays/Waybar)
+
 # Installation
 ## Generic installation of newm-next
 Because the compositor is built and installed using `pip`, diagnosing build
@@ -76,4 +83,4 @@ echo 'PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 </details>
 
 # Setting up Wayland Environment
-Follow the [README](https://github.com/human-d3v/newm-next-dots/tree/main/wayland-session). It outlines the install guide for the locking behaviour, Wayland Session variables, and start scripts. 
+Follow the [wayland-session README](https://github.com/human-d3v/newm-next-dots/tree/main/wayland-session). It outlines the install guide for the locking behaviour, Wayland Session variables, and start scripts. 
