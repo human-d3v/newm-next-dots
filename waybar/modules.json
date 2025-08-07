@@ -2,8 +2,8 @@
 	"custom/menu": {
 		"format": "󰣨",
     "tooltip": false,
-    "on-click": "$HOME/.config/newm/scripts/rofi_launcher",
-    "on-click-right": "$HOME/.config/newm/scripts/rofi_runner",
+    "on-click": "~/.config/newm/scripts/launcher.sh",
+    "on-click-right": "~/.config/newm/scripts/launcher.sh",
   },
 
   "idle_inhibitor": {
@@ -118,7 +118,7 @@
     "tooltip-format": "{controller_alias}\t{controller_address}",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-    "on-click": "~/.config/newm-next-dots/scripts/rofi_bluetooth",
+    "on-click": "~/.config/newm/scripts/rofi_bluetooth",
     "on-click-right": "blueman-manager"
   },
 
@@ -133,7 +133,7 @@
     "tooltip-format": "{controller_alias}\t{controller_address}",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-    "on-click": "~/.config/newm-next-dots/scripts/rofi_bluetooth",
+    "on-click": "~/.config/newm/scripts/rofi_bluetooth",
     "on-click-right": "blueman-manager",
   },
 
@@ -170,7 +170,7 @@
     "format-disconnected": "󰖪",
     "format-disabled": "󰖪",
     "tooltip-format": " {ifname} via {gwaddr}",
-    "on-click": "~/.config/newm-next-dots/scripts/rofi_network",
+    "on-click": "~/.config/newm/scripts/network.sh",
   },
 
   "network#2": {
@@ -187,7 +187,7 @@
   "custom/power": {
     "format": "󰐦",
     "tooltip": false,
-    "on-click": "$HOME/.config/newm-next-dots/scripts/rofi_powermenu",
+    "on-click": "$HOME/.config/newm/scripts/rofi_powermenu",
   },
 
 }
