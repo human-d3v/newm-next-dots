@@ -42,7 +42,7 @@ def on_startup():
         "hash dbus-update-activation-environment 2>/dev/null && \
             dbus-update-activation-environment --systemd \
             DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP",
-        "/usr/lib/xfce-polkit/xfce-polkit",
+        "/usr/libexec/xfce-polkit"
         f"{set_interface} gtk-theme {theme}",
         f"{set_interface} icon-theme {icon_theme}",
         f"{set_interface} cursor-theme {cursor_theme}",
@@ -99,7 +99,7 @@ pywm = {
         'focus_follows_mouse': True,
         'constrain_popups_to_toplevel': True,
         'encourage_csd': False,  # disable client side decorations
-        # 'debug': False,
+        # 'debug': False, # this will throw a weird error
         'shaders': 'basic',
         'renderer_mode': 'pywm',  # enable pywm (alternative is wlr)
 }
@@ -129,8 +129,8 @@ def rules(view):
         "float_size": (750, 750),
         "float_pos": (0.5, 0.35)
     }
-    float_app_ids = ("newm-next-launcher")
-    blur_app_ids = ("newm-next-launcher")
+    float_app_ids = ("foot", "newm-next-launcher")
+    blur_app_ids = ("foot", "newm-next-launcher")
     if view.app_id in blur_app_ids:
         return blur_rules
     if view.app_id in float_app_ids:
@@ -195,7 +195,7 @@ def key_bindings(layout: Layout) -> list[tuple[str, Callable[[], Any]]]:
         ("L-A-Return", lambda: os.system(f"{backup_term} &")),
 
         # == restart waybar
-        ("L-W", lambda: os.system(f"{waybar} &")),
+        ("L-w", lambda: os.system(f"{waybar} &")),
 
         # == file manager
         ("L-f", lambda: os.system("thunar &")),
@@ -290,7 +290,7 @@ gestures = {
 }
 
 grid = {
-    'debug': False,
+    # 'debug': False,
     'min_dist': 0.05,
     'throw_ps': [1, 5, 15],
     'time_scale': 0.3,
@@ -349,7 +349,7 @@ panels = {
     'top_bar': {
         'native': {
             'enabled': True,
-            'height': 40,
+            'height': 38,
             'texts': lambda: []
         }
     }
