@@ -83,5 +83,18 @@ echo 'PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 ```
 </details>
 
+<details>
+<summary>On Gentoo</summary>
+    
+```bash
+# this is with the desktop systemd profile selected
+# unmask packages
+echo "gui-apps/waybar ~amd64" | sudo tee -a /etc/portage/package.accept_keywords/waybar
+echo "dev-libs/date ~amd64" | sudo tee -a /etc/portage/package.accept_keywords/devlibs_date
+#install dependencies
+sudo emerge -av x11-libs/xwayland sys-auth/seatd media-video/ffmpeg x11-libs/xcb-util-errors gui-apps/wl-clipboard gui-apps/foot 
+```
+</details>
+
 # Setting up Wayland Environment
 Follow the [wayland-session README](https://github.com/human-d3v/newm-next-dots/tree/main/wayland-session). It outlines the install guide for the locking behaviour, Wayland Session variables, and start scripts. 
