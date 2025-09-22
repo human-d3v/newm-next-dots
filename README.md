@@ -3,6 +3,7 @@ newm-next is the most unique scrolling/tiling Wayland Compositor out there.
 Here is my personal config. 
 
 # Dependencies
+These are a non-comprehensive list of dependencies for these dots. 
     - NetworkManager (+tools on Gentoo)
     - Bluez
     - [wallust](https://codeberg.org/explosion-mental/wallust)
