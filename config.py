@@ -109,7 +109,7 @@ pywm = {
 # -- set background
 background = {
     'path': os.environ["HOME"] +
-    "/.config/newm_next_dots/wallpaper/red_rocks.jpg",
+    "/Pictures/wallpaper/zion.jpg",
     'time_scale': 0.15,  # time scale of background movement
     'anim': True,
 }
