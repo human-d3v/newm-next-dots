@@ -1,9 +1,11 @@
+import os;
 entries = {
     "Vivaldi": "vivaldi",
     "Ghostty": "ghostty",
     "Gimp": "gimp",
     "Thunar": "thunar",
     "Alacritty": "alacritty",
+    "Tor": f"{os.environ["HOME"]}/.config/newm/scripts/tor.sh"
 }
 
 shortcuts = {
