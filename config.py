@@ -203,7 +203,7 @@ def key_bindings(layout: Layout) -> list[tuple[str, Callable[[], Any]]]:
         # == browser
         ("L-b", lambda: os.system("vivaldi &")),
 
-        # == Rofi
+        # == launcher
         ("L-e", lambda: os.system(f"{launcher} &")),
         ("L-n", lambda: os.system(f"{network} &")),
         ("L-q", lambda: os.system(f"{powermenu} &")),
