@@ -85,14 +85,16 @@ echo 'PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 
 <details>
 <summary>On Gentoo</summary>
-    
+If you're using Gentoo as your daily driver, it really should go without saying
+that you should not just copy the following and try to compile it to your system. 
+You will need to add the guru overlay, unmask various packages, adjust package
+USE flags and build for your architecture with your make flags. I'm only
+including this list for reference.
+
 ```bash
 # this is with the desktop systemd profile selected
-# unmask packages
-echo "gui-apps/waybar ~amd64" | sudo tee -a /etc/portage/package.accept_keywords/waybar
-echo "dev-libs/date ~amd64" | sudo tee -a /etc/portage/package.accept_keywords/devlibs_date
 #install dependencies
-sudo emerge -av x11-libs/xwayland sys-auth/seatd media-video/ffmpeg x11-libs/xcb-util-errors gui-apps/wl-clipboard gui-apps/foot 
+sudo emerge -av app-misc/brightnessctl dev-libs/light dev-libs/mpc dev-util/geany dev-ruby/sync gnome-extra/yad::guru gui-apps/foot gui-apps/fuzzel::guru gui-apps/mako gui-apps/satty gui-apps/satty gui-apps/slurp gui-apps/waybar gui-apps/wf-recorder gui-apps/wl-clipboard gui-apps/wlogout::guru gui-apps/wtype::wayland-desktop gui-libs/xdg-desktop-portal-wlr media-gfx/imagemagick media-gfx/viewnoir media-sound/mpd media-sound/playerctl media-sound/pulsemixer media-video/ffmpeg media-video/libva-utils media-video/mpv sys-auth/polkit sys-auth/polkit sys-auth/seatd www-client/vivaldi x11-base/xwayland x11-libs/xcb-util-errors x11-terms/alacritty x11-terms/ghostty xfce-base/libxfce4ui xfce-base/thunar xfce-base/tumbler
 ```
 </details>
 
