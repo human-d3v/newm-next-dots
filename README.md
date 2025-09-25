@@ -4,13 +4,20 @@ Here is my personal config.
 
 # Dependencies
 These are a non-comprehensive list of dependencies for these dots. 
-    - NetworkManager (+tools on Gentoo)
-    - Bluez
-    - [wallust](https://codeberg.org/explosion-mental/wallust)
-    - [newm-next](https://github.com/newm-next/newm-next)
-    - [waybar](https://github.com/Alexays/Waybar)
+- NetworkManager (+tools on Gentoo)
+- Bluez
+- [wallust](https://codeberg.org/explosion-mental/wallust)
+- [newm-next](https://github.com/newm-next/newm-next)
+- [waybar](https://github.com/Alexays/Waybar)
 
 # Installation
+
+To clone this repository:
+
+```bash
+git clone https://github.com/human-d3v/newm-next-dots $HOME/.config/newm
+```
+
 ## Generic installation of newm-next
 Because the compositor is built and installed using `pip`, diagnosing build
 issues is a little tricky. Most of the dependency issues occur when building 
