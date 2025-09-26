@@ -184,7 +184,7 @@ launcher = '~/.config/newm/scripts/launcher.sh'
 network = '~/.config/newm/scripts/network.sh'
 powermenu = '~/.config/dotfiles/scripts/rofi/powermenu.sh'
 screenshot = '~/.config/newm/scripts/screenshot.sh'
-brightness = '~/.config/dotfiles/scripts/brightness.sh'
+brightness = '~/.config/newm/scripts/brightness.sh'
 volume = '~/.config/dotfiles/scripts/volume.sh'
 
 
@@ -251,8 +251,8 @@ def key_bindings(layout: Layout) -> list[tuple[str, Callable[[], Any]]]:
         ("XF86KbdBrightnessUp", lambda: os.system("light -A 5 &")),
         ("XF86KbdBrightnessDown", lambda: os.system("light -U 5 &")),
         # ==== monitor brightness
-        ("XF86MonBrightnessUp", lambda: os.system(f"{brightness} --up &")),
-        ("XF86MonBrightnessDown", lambda: os.system(f"{brightness} --down &")),
+        ("XF86MonBrightnessUp", lambda: os.system(f"{brightness} --inc &")),
+        ("XF86MonBrightnessDown", lambda: os.system(f"{brightness} --dec &")),
         # ==== volume
         ("XF86AudioRaiseVolume", lambda: os.system(f"{volume} --up &")),
         ("XF86AudioLowerVolume", lambda: os.system(f"{volume} --down &")),
