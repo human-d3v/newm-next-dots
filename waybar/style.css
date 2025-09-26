@@ -71,7 +71,7 @@ window#waybar {
 #battery.2,
 #custom-workspace-wrapper,
 #idle_inhibitor.2,
-#custom-window-title.2,
+#custom-window-title,
 #custom-brightness.2 {
 	font-size: 16px;
 	background: @widget-other;
@@ -87,7 +87,7 @@ window#waybar {
 #bluetooth.2,
 #battery,
 #idle_inhibitor,
-#custom-window-title,
+#custom-window-title.2,
 #custom-brightness {
 	font-size: 16px;
   background-color: @widget-background;
