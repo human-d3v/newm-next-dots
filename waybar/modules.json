@@ -70,6 +70,18 @@
     "tooltip": "thunar",
   },
 
+	"custom/brightness#2": {
+		"format": "",
+		"tooltip": "brightness",
+	},
+
+	"custom/brightness": {
+		"exec": "~/.config/newm/scripts/brightness.sh --get",
+		"interval": 1,
+		"format": {},
+		"return-type": "text"
+	},
+
   "battery#2": {
 		"interval": 60,
 		"full-at": 100,
