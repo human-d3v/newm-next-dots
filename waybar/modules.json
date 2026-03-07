@@ -60,7 +60,7 @@
 
 	"custom/launch-dock-ebook":{
 		"format":"",
-		"on-click":"calibre",
+		"on-click":"$HOME/.config/newm/scripts/calibre.sh",
 		"tooltip":"calibre",
 	},
 
@@ -78,7 +78,7 @@
 	"custom/brightness": {
 		"exec": "~/.config/newm/scripts/brightness.sh --get",
 		"interval": 1,
-		"format": {},
+		"format": "{}%",
 		"return-type": "text"
 	},
 
